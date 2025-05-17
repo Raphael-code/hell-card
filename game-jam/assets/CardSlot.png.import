@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cknqfdfma3hs0"
-path="res://.godot/imported/soldat_1.png-a2479de37dd37e905aefe13f14713d87.ctex"
+uid="uid://bgt77g8qjoia0"
+path="res://.godot/imported/CardSlot.png-72f0192e94658de58f748d26071c43bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://soldat_1.png"
-dest_files=["res://.godot/imported/soldat_1.png-a2479de37dd37e905aefe13f14713d87.ctex"]
+source_file="res://assets/CardSlot.png"
+dest_files=["res://.godot/imported/CardSlot.png-72f0192e94658de58f748d26071c43bc.ctex"]
 
 [params]
 
