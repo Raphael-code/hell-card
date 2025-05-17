@@ -14,3 +14,7 @@ config/name="game jam"
 run/main_scene="uid://cajsx44o75vfw"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="game jam"
