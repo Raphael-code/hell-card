@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qupbmphuycvl"
-path="res://.godot/imported/flag.png-29c6a06ab0a1d25cfcfa38ea2a7baffa.ctex"
+uid="uid://dis7170s6la1f"
+path="res://.godot/imported/automaton_deck.png-e6fda5728b43808057bdd2327083ddfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flag.png"
-dest_files=["res://.godot/imported/flag.png-29c6a06ab0a1d25cfcfa38ea2a7baffa.ctex"]
+source_file="res://assets/automaton_deck.png"
+dest_files=["res://.godot/imported/automaton_deck.png-e6fda5728b43808057bdd2327083ddfc.ctex"]
 
 [params]
 

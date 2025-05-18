@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qupbmphuycvl"
-path="res://.godot/imported/flag.png-29c6a06ab0a1d25cfcfa38ea2a7baffa.ctex"
+uid="uid://dq5m8bowt11ce"
+path="res://.godot/imported/terminid_deck.png-5c2c4658350cd934be506d3e3a9af240.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/flag.png"
-dest_files=["res://.godot/imported/flag.png-29c6a06ab0a1d25cfcfa38ea2a7baffa.ctex"]
+source_file="res://assets/terminid_deck.png"
+dest_files=["res://.godot/imported/terminid_deck.png-5c2c4658350cd934be506d3e3a9af240.ctex"]
 
 [params]
 

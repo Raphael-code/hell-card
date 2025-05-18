@@ -4,10 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://ck1h3i18dc4g4" path="res://assets/Soldat1.png" id="1_q04jv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2kwvy"]
-size = Vector2(203, 358)
+size = Vector2(178.75, 265)
 
 [node name="carte" type="Node2D"]
 position = Vector2(150, 890)
+scale = Vector2(0.8, 0.8)
 script = ExtResource("1_32m0s")
 
 [node name="CardImage" type="Sprite2D" parent="."]
@@ -17,22 +18,24 @@ texture = ExtResource("1_q04jv")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.625, -1.25)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_2kwvy")
 
 [node name="Attack" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(2, 2)
-offset_left = -83.0
-offset_top = 150.0
-offset_right = -57.0
-offset_bottom = 176.0
+offset_left = -73.75
+offset_top = 100.0
+offset_right = -47.75
+offset_bottom = 126.0
 text = "0"
 
 [node name="Health" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(2, 2)
-offset_left = 73.0
-offset_top = 149.0
-offset_right = 100.0
-offset_bottom = 175.0
+offset_left = 67.5
+offset_top = 98.75
+offset_right = 94.5
+offset_bottom = 124.75
 text = "0"
 
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

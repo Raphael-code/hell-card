@@ -4,6 +4,9 @@ signal hover
 signal hover_off
 
 var starting_position
+var card_is_in_slot
+var card_type
+var blocked = true
 
 func _ready() -> void:
 	get_parent().connect_card_signals(self)
