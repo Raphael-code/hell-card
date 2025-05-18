@@ -1,5 +1,8 @@
 extends Node2D
 
+var Input_mode: bool = false
+var Input_list = []
+
 signal left_mouse_button_clicked
 signal left_mouse_button_released
 
@@ -20,6 +23,28 @@ func _input(event):
 			raycast_at_cursor()
 		else:
 			emit_signal("left_mouse_button_released")
+
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ENTER:
+			Input_mode = !Input_mode
+
+			if Input_mode:
+				Input_list.clear()
+
+		if Input_mode and event.keycode in CardManager.key_list:
+			Input_list.append(event.keycode)
+
+func check_if_correctInput(card) -> bool:
+	if !Input_mode:
+		if !Input_list.is_empty():
+			if len(Input_list) != len(card.command):
+				return false
+			for i in range(0, len(card.command)):
+				if card.curr_keys[card.command[i]] != Input_list[i]:
+					return false
+			Input_list.clear()
+			return true
+	return false
 
 func raycast_at_cursor():
 	var space_state = get_world_2d().direct_space_state
