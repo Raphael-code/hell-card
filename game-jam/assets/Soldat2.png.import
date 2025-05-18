@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8hmiualba4no"
-valid=false
+uid="uid://dwlyjeicbdlig"
+path="res://.godot/imported/Soldat2.png-b10f1b33a5bd4afe2c820f01249dd1ea.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/bugs2.png"
+source_file="res://assets/Soldat2.png"
+dest_files=["res://.godot/imported/Soldat2.png-b10f1b33a5bd4afe2c820f01249dd1ea.ctex"]
 
 [params]
 

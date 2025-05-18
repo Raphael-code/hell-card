@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://dadgdp4wiy8t4" path="res://scene/card_slot.tscn" id="3_4j5ol"]
 [ext_resource type="Script" uid="uid://cayutsdsjv552" path="res://script/player_hand.gd" id="4_brvut"]
 [ext_resource type="Texture2D" uid="uid://6uvf32vhwe37" path="res://assets/Deck.png" id="5_0ha60"]
-[ext_resource type="Script" uid="uid://oja6i554tyb" path="res://scene/Deck.gd" id="5_4j5ol"]
-[ext_resource type="Script" uid="uid://d2u5ck8do0dmy" path="res://scene/input_manager.gd" id="7_p1hux"]
+[ext_resource type="Script" uid="uid://oja6i554tyb" path="res://Deck.gd" id="5_4j5ol"]
+[ext_resource type="Script" uid="uid://d2u5ck8do0dmy" path="res://input_manager.gd" id="7_p1hux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4j5ol"]
 size = Vector2(179, 264)
