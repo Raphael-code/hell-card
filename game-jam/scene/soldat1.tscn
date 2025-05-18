@@ -19,7 +19,6 @@ texture = ExtResource("1_q04jv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0.625, -1.25)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_2kwvy")
 
 [node name="Attack" type="RichTextLabel" parent="."]

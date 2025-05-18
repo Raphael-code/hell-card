@@ -36,6 +36,8 @@ func draw_card():
 	new_card.get_node("Attack").text = str(card_database_reference.CARDS[card_drawn_name][0])
 	new_card.get_node("Health").text = str(card_database_reference.CARDS[card_drawn_name][1])
 	new_card.card_type = card_database_reference.CARDS[card_drawn_name][2]
+	for i in range(3):
+		new_card.command.append(randi_range(0, 26))
 	$"../card manager".add_child(new_card)
 	new_card.name = "Carte"
 	$"../PlayerHand".add_card_to_hand(new_card, CARD_DRAW_SPEED)

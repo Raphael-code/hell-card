@@ -34,17 +34,16 @@ func _input(event):
 		if Input_mode and event.keycode in CardManager.key_list:
 			Input_list.append(event.keycode)
 
-func check_if_correctInput(card) -> bool:
+func check_if_correctInput(card):
 	if !Input_mode:
 		if !Input_list.is_empty():
 			if len(Input_list) != len(card.command):
-				return false
+				return
 			for i in range(0, len(card.command)):
-				if card.curr_keys[card.command[i]] != Input_list[i]:
-					return false
+				if CardManager.key_list[card.command[i]] != Input_list[i]:
+					return
 			Input_list.clear()
-			return true
-	return false
+			card.blocked = false
 
 func raycast_at_cursor():
 	var space_state = get_world_2d().direct_space_state
