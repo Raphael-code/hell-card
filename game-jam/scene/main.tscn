@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cajsx44o75vfw"]
+[gd_scene load_steps=8 format=3 uid="uid://cajsx44o75vfw"]
 
 [ext_resource type="Script" uid="uid://c1mo2penl1jij" path="res://script/drag.gd" id="1_0ha60"]
 [ext_resource type="PackedScene" uid="uid://dadgdp4wiy8t4" path="res://scene/card_slot.tscn" id="3_4j5ol"]
 [ext_resource type="Script" uid="uid://cayutsdsjv552" path="res://script/player_hand.gd" id="4_brvut"]
-[ext_resource type="Script" uid="uid://nu3wginoh77h" path="res://script/card_slot.gd" id="4_p1hux"]
+[ext_resource type="Texture2D" uid="uid://6uvf32vhwe37" path="res://assets/Deck.png" id="5_0ha60"]
+[ext_resource type="Script" uid="uid://oja6i554tyb" path="res://scene/Deck.gd" id="5_4j5ol"]
+[ext_resource type="Script" uid="uid://d2u5ck8do0dmy" path="res://scene/input_manager.gd" id="7_p1hux"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4j5ol"]
+size = Vector2(179, 264)
 
 [node name="main" type="Node2D"]
 
@@ -12,10 +17,37 @@ script = ExtResource("1_0ha60")
 
 [node name="card slot" parent="." instance=ExtResource("3_4j5ol")]
 position = Vector2(998, 293)
-script = ExtResource("4_p1hux")
 
 [node name="card slot2" parent="." instance=ExtResource("3_4j5ol")]
 position = Vector2(169, 423)
 
 [node name="PlayerHand" type="Node2D" parent="."]
 script = ExtResource("4_brvut")
+
+[node name="Deck" type="Node2D" parent="."]
+position = Vector2(150, 890)
+script = ExtResource("5_4j5ol")
+
+[node name="Sprite2D" type="Sprite2D" parent="Deck"]
+z_index = -2
+texture = ExtResource("5_0ha60")
+
+[node name="Area2D" type="Area2D" parent="Deck"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Deck/Area2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_4j5ol")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Deck"]
+modulate = Color(0, 0, 0, 1)
+z_index = -2
+offset_left = 45.0
+offset_top = 88.0
+offset_right = 85.0
+offset_bottom = 128.0
+text = "0"
+
+[node name="Input Manager" type="Node2D" parent="."]
+script = ExtResource("7_p1hux")
